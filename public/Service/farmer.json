@@ -1,0 +1,108 @@
+{
+  "division": {
+    "name": "Farmer Header",
+    "formelements": {
+      "title": "General ",
+      "generalDetails": [
+        {
+          "id": "FID(UNI)",
+          "label": "fid",
+          "control": "textbox",
+          "validation": "alphanumeric",
+          "disabled": true
+        },
+        {
+          "id": "Name",
+          "label": "name",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "Phone No",
+          "label": "phone",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "Address Book",
+          "label": "address",
+          "control": "dialog",
+          "addressFields": [
+            {
+              "id": "Street Address",
+              "label": "street",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "City",
+              "label": "city",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "State",
+              "label": "state",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "Pin Code",
+              "label": "pin",
+              "control": "textbox",
+              "validate": "number"
+            }
+          ]
+        },
+        {
+          "id": "Aadhar No",
+          "label": "aadhar_no",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "label": "pan",
+          "id": "PAN",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        }
+      ],
+      "title1": "Payment",
+      "paymentDetails": [
+        {
+          "id": "Payee Name",
+          "label": "payee",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "Account Number",
+          "label": "account",
+          "control": "textbox",
+          "validate": "number"
+        },
+        {
+          "id": "IFSC Code",
+          "label": "ifsc",
+          "control": "textbox",
+          "validate": "number"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "https://localhost/createPO"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "polist"
+      }
+    ]
+  }
+}
